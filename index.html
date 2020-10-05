@@ -4,33 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <title>Password Generator</title>
     
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Password Generator</h1>
-      </header>
-      <div class="card">
-        <div class="card-header">
-          <h2>Generate a Password</h2>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Random Password Generator</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 col-sm-12"></div>
+          <div id="wrapper">
+            <header>
+                <h1>Password Generator</h1>
+            </header>
+            <div id="content">
+                <hr>
+                <input type="text" id="password" placeholder="Secure Password"
+                    aria-label="Password"></textarea>
+                <hr>
+                <div id="btn">
+                    <button onclick="generate();">Generate new Password</button> 
+    
+                </div>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-          <textarea
-            readonly
-            id="password"
-            placeholder="Your Secure Password"
-            aria-label="Generated Password"
-          ></textarea>
-        </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
-        </div>
-      </div>
+
     </div>
   </body>
 </html>
